@@ -1,0 +1,259 @@
+#metaCrowdApp *{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;    
+    list-style: none;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    padding:0px;
+}
+
+.modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    font-size:20px;
+}
+
+#metaCrowdApp .modalDialog{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display:inline;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+#metaCrowdApp #app{
+    width:700px;
+    height:635px;
+    position: relative;
+}
+
+#metaCrowdApp .highlight{
+    background-color: #c0ded9 !important;
+}
+
+#metaCrowdApp #header{
+    border-bottom: solid black 2px;
+    width: 100%;
+    height:5%;
+}
+
+.helpDialog{
+    border-radius: 10px;
+    background-color: red;
+}
+
+#metaCrowdApp #header #close{
+
+    border: 2px solid black;
+    width: 17px;
+    height:17px;
+    margin: 2px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px ;
+    float:right;
+    background-color:white;
+    font-size: 13px;
+    color: black
+    
+}
+
+#metaCrowdApp #header #close:hover{
+    background-color:black;
+    color: white
+}
+
+#metaCrowdApp #data{
+    width: 100%-4px;
+    height: 19%;
+    text-align: center;
+    overflow: hide;
+    padding-top: 5px;
+    line-height: 200%;
+    border-radius: 2px;
+    border: solid black 2px;
+    margin:2px;
+    
+    
+}
+
+#metaCrowdApp #menu{
+    width: 100%;
+    height: 5%;
+}
+
+#metaCrowdApp #solution{
+    width: 100%;
+    height: 67%;
+    overflow: auto;
+    
+}
+
+#metaCrowApp .right{
+    float: right;
+}
+
+#metaCrowApp .left{
+    float: left;
+}
+
+#metaCrowdApp #menu li{
+    display: inline-block;
+}
+
+#metaCrowdApp .check{
+  margin: 4px 0 0 2px;
+  border: 1px solid lightgray;
+  padding: 0 2px 0 0;
+  border-radius: 2px;   
+}
+
+#metaCrowdApp .check input[type="checkbox"]{
+    margin:2px 0 0 2px;
+}
+
+#metaCrowdApp .button{
+    display: inline-block;
+    opacity: 0.6;
+    margin: 3px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#metaCrowdApp .button img{
+    height:20px;
+    width:20px;  
+    border-radius: 50%;
+}
+
+#metaCrowdApp #done img{
+    height:27px;
+    width:27px;
+}
+
+#metaCrowdApp #done{
+    height:27px;
+    width:27px;
+    margin:0 0 0 0;
+    
+}
+
+#metaCrowdApp .button:hover{
+    opacity: 1;
+}
+
+#metaCrowdApp select{
+    border-radius: 2px;
+    border: 1px solid black;
+    min-height: 15px;
+    margin: 4px;
+    text-align: left;
+}
+
+#metaCrowdApp #language{
+    width: 40px;
+    opacity: 0.6;
+    margin-right: 10px; 
+}
+
+#metaCrowdApp #type{
+    width: 140px;
+    margin-left: 10px ;
+    margin-right:  10px; 
+}
+
+#metaCrowdApp #solution #tableData{
+    width: 100%;
+}
+
+#metaCrowdApp #tableData .title{
+   text-align: center;
+   width:20%;
+   border: 2px solid black;
+   border-radius: 3px;
+   height: 170%;
+}
+
+#metaCrowdApp #tableData .data{
+
+   border: 2px solid black;
+   border-radius: 3px;
+   height: 25px;
+   min-width: 200px; 
+}
+
+#metaCrowdApp .splitter{
+    cursor: e-resize;
+    margin-right: 3px;
+}
+
+#metaCrowdApp .draggable{
+    border: 1px solid black;
+    padding: 2px;
+    margin-right: 2px;
+    text-align:center;
+    background-color: white;
+    border-radius: 2px;
+}
+
+#metaCrowdApp #tableData .sortable{
+    border-radius: 2px;
+    padding: 3px;
+    display:inline-block;
+    width: 90%;
+    min-height:90%;
+    line-height: 160%;
+}
+
+#metaCrowdApp #solution #sortTypeMenu{
+    border: 2px solid black;
+    border-radius: 3px;
+    margin: 2px;
+    height: 85%;
+    padding: 10px;
+    text-align: center;
+}
+
+#metaCrowdApp #solution #sortTypeMenu p{
+    font-variant: small-caps;
+    padding: 5px;
+    font-size: 20px;
+    
+}
+
+#metaCrowdApp #solution .button{
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+#metaCrowdApp #solution #sortTypeMenu div{
+    padding: 5px;
+    width:40%;
+    display:inline-block;
+
+}
+
+.ui-dialog .ui-dialog-content{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-variant: small-caps;
+    font-size: 14px;
+}
